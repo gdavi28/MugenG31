@@ -1,0 +1,581 @@
+;---------------------------------------------------------------------
+[Characters]
+ ;How to add characters
+ ;---------------------
+ ;Use the format:
+ ;    charname, stagefilename
+ ;
+ ;eg. For a player with filename "kfm",
+ ;    and stage filename "stages/mybg.def"
+ ;type (without the semicolon):
+ ;    kfm, stages/mybg.def
+ ;
+ ;If you want to load a different def file, you can enter it
+ ;as a directory plus the def file. This example loads up
+ ;chars/kfm/alt-kfm.def:
+ ;    kfm/alt-kfm.def, stages/mybg.def
+ ;
+ ;If you put "random" as the stagefilename, then a random stage will
+ ;be selected for that player. eg.
+ ;    kfm, random
+ ;
+ ;Zipped characters are also supported.
+ ;Place the ZIP file in the chars/ directory. The syntax is as
+ ;follows:
+ ;    zipname.zip:defname.def, stages/mybg.def
+ ;For example, if you have newsuave.def in suave.zip, the syntax is:
+ ;    suave.zip:newsuave.def, stages/mybg.def
+ ;If your def file has the same name as the zip file (eg. suave.def
+ ;in suave.zip), you can just put the name of the zip file alone:
+ ;    suave.zip, stages/mybg.def
+ ;
+ ;Optional parameters may follow on the same line, separated
+ ;by commas. Each parameter has the form:
+ ;    paramname = paramvalue
+ ;where paramname is the name of the parameter type, and
+ ;paramvalue is the value to assign that parameter.
+ ;The optional parameters are:
+ ;
+ ; - music
+ ;   Set the paramvalue to the name of the music file to use
+ ;   as the BGM for that character. This overrides the bgmusic
+ ;   parameter in the stage's .def file, so you can re-use the
+ ;   same stage for multiple characters, but have a different
+ ;   BGM playing for each person.
+ ;
+ ; - includestage
+ ;   Set the paramvalue to 0 to avoid including this stage
+ ;   in the stage select list (in VS, training modes, etc)
+ ;
+ ; - order
+ ;   Set the paramvalue to the ordering priority to give the
+ ;   character. Valid values are from 1 to 10. A smaller value
+ ;   means you will fight the character sooner. You will never
+ ;   fight an order 2 character before an order 1 character,
+ ;   and never an order 3 character before an order 2 one.
+ ;   For example, you might want to set your boss character
+ ;   to have order=3. The default order value is 1 if you omit
+ ;   this param. See *.maxmatches under [Options] for how to
+ ;   limit the number of matches per order priority.
+ ;
+ ;   Some examples:
+ ;        kfm, stages/mybg.def, includestage=0
+ ;        kfm, stages/mybg.def, music=sound/song.mp3
+ ;        kfm, stages/mybg.def, music=sound/song.mp3, includestage=0
+ ;        kfm, stages/mybg.def, order=3
+ ;
+ ;You can also add a randomize icon to the select screen. To do
+ ;this, put the word "randomselect" on a line of its own, with no
+ ;extra parameters.
+ ;
+ ;Insert your characters below.
+
+evilryu
+evilken
+EvilDan
+DCHUNLI
+HolyRyu3
+hken
+SuperMario
+Kamek
+Link
+zero
+Patchouli
+Marisa
+remilia
+0FatAlbert_93
+0Popeye_W98
+homer
+thor
+Wonder
+wolverine
+Orochi_
+CIEL
+NecoArc
+Ella
+jotaro
+petshop
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+randomselect
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+empty ; LOCKED
+randomselect
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+DivineKFM
+Yuuki_SE
+;-----------------------
+[ExtraStages]
+ ;Put extra stages here. They will be available in VS and Watch modes.
+ ;For example, you can insert "stages/mybg.def".
+stages\redtemple.def
+stages/DATTE.def
+stages/roof2.def
+stages/2k_stg.def
+stages/atusiR.def
+stages/atusiworld.def
+stages/Bar.def
+stages/chirasiura.def
+stages/Defense.def
+stages/DOSHIAGI.def
+stages/pizza_stage.def
+stages/Dungeon.def
+stages/goboten.def
+stages/desertsun.def;stages/desertsun.def
+stages/peakvalley.def;stages/peakvalley.def
+stages/snapdragon.def;stages/snapdragon.def
+stages/harowa.def
+stages/locker_room.def
+stages/hatten.def
+stages/munku.def
+stages/heika_c.def
+stages/otintin.def
+stages/mayoiga.def
+stages/ie-P.def
+stages/iwaoboss.def
+stages/okujou.def
+stages/Jissou.def
+stages/pengin_nankyoku.def
+stages/pigyo.def
+stages/Jumstage.def
+stages/kouen.def
+stages/labo.def
+Stages/3dbeach.def;Stages/3dbeach.def
+stages/Ryuuou_stage.def
+stages/field.def;stages/field.def
+stages/Alice_Morning.def
+stages/Alice_Night.def
+stages/AVP-Lab.def
+stages/A18Stage.def
+stages/arianrod.def
+stages/asukaBG.def;stages/asukaBG.def
+stages/australian_outbackDG.def
+stages/fort.def;stages/fort.def
+stages/mayoiga_night.def
+stages/sacchin.def
+stages/bamboo.def;stages/bamboo.def
+stages/maximum.def
+stages/FallsMornTX.def
+stages/ryubg.def
+stages/cyclists.def;stages/cyclists.def
+stages/agony.def
+stages/snowfld.def;stages/snowfld.def
+stages/BOSQUE INUYASHA.def
+stages/vtol.def
+stages/river.def;stages/river.def
+stages/saiseki.def
+stages/chibiBG.def;stages/chibiBG.def
+stages/2002china3.def;stages/2002china3.def
+stages/2003china1.def;stages/2003china1.def
+stages/chinadojo_rotd.def;stages/chinadojo_rotd.def
+stages/flame.def
+stages/KDL3-CloudyPark4-3.def
+stages/sasuke.def
+stages/DonjonTX.def
+stages/maoubg.def
+stages/Megamanbg.def
+stages/Dr.Slump.def
+stages/sougen.def
+stages/EternalFighter ZERO/EFZ_Akane.def
+stages/EternalFighter ZERO/EFZ_Ayu.def
+stages/EternalFighter ZERO/EFZ_Ikumi.def
+stages/EternalFighter ZERO/EFZ_Kanna.def
+stages/EternalFighter ZERO/EFZ_Kano.def
+stages/EternalFighter ZERO/EFZ_Kaori.def
+stages/EternalFighter ZERO/EFZ_Mai.def
+stages/EternalFighter ZERO/EFZ_Makoto.def
+stages/EternalFighter ZERO/EFZ_Mayu.def
+stages/EternalFighter ZERO/EFZ_Michiru.def
+stages/EternalFighter ZERO/EFZ_Minagi.def
+stages/EternalFighter ZERO/EFZ_Mio.def
+stages/EternalFighter ZERO/EFZ_Misaki.def
+stages/EternalFighter ZERO/EFZ_Misio.def
+stages/EternalFighter ZERO/EFZ_Misuzu.def
+stages/EternalFighter ZERO/EFZ_Mizuka.def
+stages/EternalFighter ZERO/EFZ_Nanase.def
+stages/EternalFighter ZERO/EFZ_Nayuki.def
+stages/EternalFighter ZERO/EFZ_Poteto.def
+stages/EternalFighter ZERO/EFZ_Rumi.def
+stages/EternalFighter ZERO/EFZ_Sayuri.def
+stages/EternalFighter ZERO/EFZ_Siori.def
+stages/EternalFighter ZERO/EFZ_Unknown.def
+stages/eva513.def
+stages/SUSHI.def
+stages/toniya.def
+stages/arena96.def;stages/arena96.def
+stages/wadamoya.def;stages/wadamoya.def
+stages/forest.def
+stages/bloom.def;stages/bloom.def
+stages/CN-FrozenCavern.def
+stages/wana.def
+stages/SDBH.def;stages/SDBH.def
+stages/ramenbg.def
+stages/KDL3-Grassland1-6.def
+stages/mbac_neco.def
+stages/vsginga-.def
+stages/winme.def
+stages/DDr-Hachimanguu.def
+stages/2003hongkong1.def;stages/2003hongkong1.def
+stages/dat.def
+stages/yangoto.def
+stages/osaka.def;stages/osaka.def
+stages/shore.def;stages/shore.def
+stages/sana.def
+stages/yosinoya.def
+stages/jailbrk.def
+stages/2003japan.def;stages/2003japan.def
+stages/temple98.def;stages/temple98.def
+stages/raccoon.def
+stages/daitokuji.def
+stages/heika_c3.def
+stages/gbakenbg.def;stages/gbakenbg.def
+stages/2002korea3.def;stages/2002korea3.def
+stages/korstret.def;stages/korstret.def
+stages/kowloon.def;stages/kowloon.def
+stages/KOF2000-Kula.def
+stages/heika_c2.def
+stages/LeeStage.def
+stages/oldline.def
+stages/dipan_p.def
+stages/zangyou.def
+stages/Makoto_Stage.def
+stages/Marisa_Morning.def
+stages/Marisa_Night.def
+stages/mb_m-hisui.def
+stages/mb_kouma.def
+stages/mb_miyako.def
+stages/mb_alley.def
+stages/mist.def;stages/mist.def
+stages/mount.def
+stages/mountains.def
+stages/kfm.def
+stages/Nayuki1.def
+stages/Nayuki2.def
+stages/wharf.def
+stages/nijiurasou.def
+stages/brook.def
+stages/massiro.def
+stages/olympic_Coliseum.def
+stages/china.def
+stages/Orchid.def
+stages/__oro.def
+stages/atsushi_chaos.def
+stages/sumou.def
+stages/Patchouli_Night.def
+stages/planet_express.def
+stages/tek5-Paradise.def
+stages/C_bloc.def
+stages/moeko.def
+stages/cvs_finalfight.def
+stages/Reimu_Morning.def
+stages/rmx5_sigma4.def
+stages/ROL.def
+stages/SF3Ryu.def
+stages/safril.def
+stages/playgrnd.def
+stages/Sakuya_Morning.def
+stages/KWTC.def
+stages/Samurai_Champloo.def
+stages/seraphic_s.def
+stages/SF3Sean.def
+stages/SF3Dudley.def
+stages/fate_shoppingmall.def
+stages/stage0.def
+stages/lamenkoi.def
+stages/slamdunk.def
+stages/smb_world_1-1.def
+stages/smb2_world_1-1.def
+stages/stage01.def
+stages/stage02.def
+stages/stage03.def
+stages/stage04.def
+stages/stage05.def
+stages/stage06.def
+stages/stage07.def
+stages/stage08.def
+stages/stage09.def
+stages/stage10.def
+stages/stage11.def
+stages/stage12.def
+stages/stage13.def
+stages/stage14.def
+stages/stage15.def
+stages/stage16.def
+stages/stage17.def
+stages/stage18.def
+stages/stage19.def
+stages/stage20.def
+stages/Suika.def
+stages/dohyou.def
+stages/suzaku.def
+stages/planetoid.def
+stages/tai_chi.def
+stages/Cathedral.def
+stages/china2001.def
+stages/tessbg.def
+stages/brazil.def
+stages/wall.def
+stages/fate_rooftop.def
+stages/Tourn.def
+stages/toybg.def
+stages/golgom.def
+stages/se_stg.def
+stages/xp.def
+stages/rinfasroom.def
+stages/adonbg.def
+stages/winxp_background.def
+stages/smb_dungeon.def
+stages/bedroom.def
+stages/zinjaK.def
+stages/Youmu_Morning.def
+stages/Youmu_Night.def
+stages/Yukari.def
+stages/Yuyuko.def
+stages/abui_highway.def
+stages/zool_level_1-1.def
+
+;---------------------------------------------------------------------
+[Options]
+ ;Here you set the maximum number of matches to fight before game ends
+ ;in Arcade Mode. The first number is the number of matches against
+ ;characters with order=1, followed by order=2 and order=3 respectively.
+ ;For example, for 4,3,1 you will fight up to 4 randomly-picked
+ ;characters who have order=1, followed by 3 with order=2 and 1 with
+ ;order=3.
+arcade.maxmatches = 6,1,1,0,0,0,0,0,0,0
+
+ ;Maximum number of matches to fight before game ends in Team Mode.
+ ;Like arcade.maxmatches, but applies to Team Battle.
+team.maxmatches = 4,1,1,0,0,0,0,0,0,0
